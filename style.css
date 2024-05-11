@@ -1,0 +1,207 @@
+/*
+Theme Name: Base Theme 3
+Theme URI: http://understrap.com
+Author: AO Dev Team
+Author URI: http://online.arenacomm.com
+GitHub Theme URI: arenacomm/base-theme
+Description: Combination of AutomatticÂ´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as a parent theme. It is up to you. Including Font Awesome support, built-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundled with this install file. Just download the .zip, extract it and run "npm install" and "gulp copy-assets" inside the extracted /understrap folder.
+That downloads everything and moves it in place so that you can recompile your CSS and JS files;
+A developer version (with Gulp/node and Sass sources) is available on gitHub: https://github.com/holger1411/understrap
+A child theme is available on Github, too: https://github.com/holger1411/understrap-child;
+Version: 3.0.22
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: understrap
+Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+*/
+
+html{
+  text-rendering: optimizeLegibility!important;
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+a{}
+.wrapper-navbar{}
+.wrapper-index{}
+.wrapper-footer{}
+
+/*
+BUTTONS
+*/
+
+.btn{}
+.btn-primary{}
+.btn-success{}
+.btn-lg{}
+.btn-sm{}
+.gform_button {
+    cursor: pointer;
+}
+
+/*
+MENU
+*/
+.navbar-nav .nav-link
+.navbar{}
+.navbar-brand{}
+.navbar-brand>img{}
+.nav-link{}
+.nav-item{}
+.navbar-nav{}
+.widget .nav{
+  display:block;
+  padding-left:2rem;
+  list-style-type:disc;
+}
+
+/* Share Links */
+.share_links {
+    text-align: center;
+    line-height: 0;
+}
+.share_links:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.share_links>a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 2rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 0.3rem;
+}
+.share_links a:first-child{
+  margin-left: 0;
+}
+/* Social Links */
+.social_links{
+  display: flex;
+  justify-content: center;
+}
+.social_links a span{
+  width: 2rem;
+  margin: 0 .2rem;
+  height: 2rem;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius:3px;
+}
+.social_facebook{background-color:#3b5998;}
+.social_twitter{background-color:#00aced;;}
+.social_google_plus{background-color:#dd4b39;}
+.social_linkedin{background-color:#007bb6;}
+.social_email{background-color: #4CAF50;}
+.social_pinterest{background-color: #cb2027;}
+
+/*
+UTILITY
+*/
+.bg_white{background-color:white;}
+.bg_black{background-color:black;}
+.bg_red{background-color: #F44336;}
+.bg_blue{background-color: #13274a;}
+.bg_green{background-color: #4CAF50;}
+
+.white{color:white;}
+.black{color:black;}
+.red{color: #e63737;}
+.blue{color: #007cff;}
+.green{color:#4CAF50;}
+
+.bg_cover{background-size:cover;}
+.bg_contain{background-size:contain;}
+
+.padder {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.padder_top {
+    padding-top: 50px;
+}
+.padder_bot {
+    padding-bottom: 50px;
+}
+.padder_lg {
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.padder_lg_bot {
+    padding-bottom: 100px;
+}
+.padder_lg_top {
+    padding-top: 100px;
+}
+.padder_sm {
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+.padder_sm_bot {
+    padding-bottom: 25px;
+}
+.padder_sm_top {
+    padding-top:25px;
+}
+.no_padder{
+  padding:0!important;
+}
+
+section{
+    padding:100px 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.wrapper {
+    background-size: cover;
+    background-position: center center;
+}
+
+div{}
+/*
+RESPONSIVENESS
+*/
+@media only screen and (min-width: 1680px) {
+
+body{
+  max-width: 1680px; /* large laptop */
+  margin:auto;
+}
+
+}
+@media only screen and ( max-width: 1200px ) {
+
+.wrapper-navbar{}
+
+}
+@media only screen and ( max-width: 992px ) {
+
+.wrapper-navbar{}
+
+}
+@media only screen and ( max-width: 768px ) {
+
+.wrapper-navbar{}
+
+.anim, .anim_left, .anim_right, .anim_up {
+    opacity: 1!important;
+}
+
+}
+@media only screen and ( max-width: 576px ) {
+
+.wrapper-navbar{}
+
+}

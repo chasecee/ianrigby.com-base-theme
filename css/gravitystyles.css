@@ -1,0 +1,422 @@
+/*
+Gravity Forms Bootstrap 4.0 - Created by Chase Cee v1.0
+*/
+
+.gform_wrapper .gform_fields {
+    margin-right: -5px;
+    margin-left: -5px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.gform_heading{
+  margin-bottom: 1rem;
+}
+.gform_wrapper label {
+  display: none;
+  margin-bottom: .5rem;
+}
+.gform_wrapper .file label {
+    display: inline-block;
+    cursor: pointer;
+}
+.gform_fields>li {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+.ginput_complex {
+}
+.form_wide .gform_body {
+    float: left;
+    width:78%;
+    margin-right:2%;
+}
+
+.form_wide .gform_footer {
+    float: left;
+    width: 20%;
+}
+.wire .ginput_container input,
+.wire .ginput_container select,
+.wire .ginput_container textarea {
+    background-color: transparent;
+    color: white;
+}
+.ginput_container_address>span>label {
+    display: inline-block;
+}
+.ginput_complex label,
+.ginput_container_time label,
+.ginput_container_date label,
+.ginput_counter {
+  display: inline-block;
+  font-size: 80%;
+}
+.ginput_full{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.ginput_left{
+    width: calc(50% - 5px);
+    float: left;
+}
+.ginput_right{
+    float: right;
+    width: calc(50% - 5px);
+}
+.clear-multi,.ginput_container_name {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.ginput_container_time, .clear-multi .ginput_container_date, .ginput_container_name>span{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.gfield_time_hour {
+    position: relative;
+}
+.gfield_time_hour i {
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ginput_container input[type=text],
+.ginput_container input[type=email],
+.ginput_container input[type=tel],
+.ginput_container input[type=password],
+.ginput_container input[type=number],
+.ginput_container select,
+.ginput_container textarea{
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    min-height: 30px;
+}
+.ginput_container input[type=text]:focus,
+.ginput_container input[type=email]:focus,
+.ginput_container input[type=tel]:focus,
+.ginput_container input[type=password]:focus,
+.ginput_container input[type=number]:focus,
+.ginput_container select:focus,
+.ginput_container textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.ginput_container select:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+}
+ul.gfield_radio,
+ul.gfield_checkbox {
+    clear: both;
+    list-style: none;
+    padding: 0;
+}
+
+ul.gfield_radio>li, ul.gfield_checkbox>li {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+ul.gfield_radio input[type=checkbox], ul.gfield_checkbox input[type=radio] {}
+ul.gfield_radio label,
+ul.gfield_checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding-left: .5rem;
+    vertical-align:middle;
+}
+.nolabel label{
+  display: none;
+  visibility: hidden;
+}
+
+/* DATEPICKER */
+.ui-datepicker {
+    width: 216px;
+    height: auto;
+    margin: 5px auto 0;
+    font: 9pt Arial, sans-serif;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5)
+}
+.ui-datepicker a {
+    text-decoration: none
+}
+
+.ui-icon-circle-triangle-w,.ui-icon-circle-triangle-e {
+    border: 6px solid transparent;
+    /* border-left-color: white; */
+    width: 0;
+    height: 0;
+    position: absolute;
+    font-size: 0;
+    top: 10px;
+}
+
+.ui-icon-circle-triangle-e {
+    border-left-color: white;
+    right: 0;
+}
+
+.ui-icon-circle-triangle-w {
+    border-right-color: white;
+    left: 0;
+}
+.ui-datepicker table {
+    width: 100%;
+    border-collapse: collapse
+}
+.ui-datepicker-header {
+    background-color: #5988DA;
+    color: #e0e0e0;
+    font-weight: 700;
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(250, 250, 250, .2);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(250, 250, 250, .2);
+    box-shadow: inset 0 1px 1px 0 rgba(250, 250, 250, .2);
+    text-shadow: 1px -1px 0 #000;
+    filter: dropshadow(color=#000, offx=1, offy=-1);
+    line-height: 30px;
+    min-height: 30px!important;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: #666
+}
+.ui-datepicker-title {
+    text-align: center
+}
+.ui-datepicker-title select {
+    margin-top: 2.5%
+}
+.ui-datepicker-next,
+.ui-datepicker-prev {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(/wp-content/themes/arenabase/includes/images/arrow.png);
+    background-repeat: no-repeat;
+    line-height: 600%;
+    overflow: hidden;
+}
+.ui-datepicker-prev {
+    float: left;
+    background-position: center -30px
+}
+.ui-datepicker-next {
+    float: right;
+    background-position: center 0
+}
+.ui-datepicker thead {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWYxZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #f7f7f7 0, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(100%, #f1f1f1));
+    background: -webkit-linear-gradient(top, #f7f7f7 0, #f1f1f1 100%);
+    background: -o-linear-gradient(top, #f7f7f7 0, #f1f1f1 100%);
+    background: -ms-linear-gradient(top, #f7f7f7 0, #f1f1f1 100%);
+    background: linear-gradient(to bottom, #f7f7f7 0, #f1f1f1 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f1f1f1', GradientType=0);
+    border-bottom: 1px solid #bbb
+}
+.ui-datepicker th {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6pt;
+    padding: 5px 0;
+    color: #666;
+    text-shadow: 1px 0 0 #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=0)
+}
+.ui-datepicker tbody td {
+    padding: 0;
+    border-top: 1px solid #bbb;
+    border-right: 1px solid #bbb
+}
+.ui-datepicker tbody td:last-child {
+    border-right: 0
+}
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb
+}
+.ui-datepicker tbody tr:last-child {
+    border-bottom: 0
+}
+.ui-datepicker td a,
+.ui-datepicker td span {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    text-shadow: 1px 1px 0 #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1)
+}
+.ui-datepicker-calendar .ui-state-default {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZWRlZGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #ededed 0, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ededed), color-stop(100%, #dedede));
+    background: -webkit-linear-gradient(top, #ededed 0, #dedede 100%);
+    background: -o-linear-gradient(top, #ededed 0, #dedede 100%);
+    background: -ms-linear-gradient(top, #ededed 0, #dedede 100%);
+    background: linear-gradient(to bottom, #ededed 0, #dedede 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dedede', GradientType=0);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(250, 250, 250, .5);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(250, 250, 250, .5);
+    box-shadow: inset 1px 1px 0 0 rgba(250, 250, 250, .5)
+}
+.ui-datepicker-calendar .ui-state-hover {
+    background: #f7f7f7
+}
+.ui-datepicker-calendar .ui-state-active {
+    background: #FFF2AA;
+    border: 1px solid #c19163;
+    color: #666;
+    -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 #FFF;
+    filter: dropshadow(color=#FFF, offx=0, offy=1);
+    position: relative;
+    margin: -1px
+}
+.ui-datepicker-unselectable .ui-state-default {
+    background: #f4f4f4;
+    color: #b4b3b3
+}
+.ui-datepicker-calendar td:first-child .ui-state-active {
+    width: 29px;
+    margin-left: 0
+}
+.ui-datepicker-calendar td:last-child .ui-state-active {
+    width: 29px;
+    margin-right: 0
+}
+.ui-datepicker-calendar tr:last-child .ui-state-active {
+    height: 29px;
+    margin-bottom: 0
+}
+td.ui-datepicker-unselectable.ui-state-disabled {
+    background-color: #d7d7d7
+}
+table.ui-datepicker-calendar {
+    margin: 0!important
+}
+body div#ui-datepicker-div[style] {
+    z-index: 9999!important
+}
+.ginput_container_date img.ui-datepicker-trigger {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    padding: 9px 11px 12px;
+    cursor: pointer;
+}
+/* ERRORS/VALIDATION */
+.validation_error{
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.validation_message{
+    color: #dc3545;
+    font-size: 80%;
+    margin-top: .25rem;
+}
+.gfield_error .ginput_container input,
+.gfield_error .ginput_container select,
+.gfield_error .ginput_container textarea{
+  border-color: #dc3545;
+}
+.gfield_error .ginput_container input:focus,
+.gfield_error .ginput_container select:focus,
+.gfield_error .ginput_container input:focus,
+.gfield_error .ginput_container input:focus{
+  box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+  border-color: #dc3545;
+}
+.gfield_error .ginput_complex label{margin-bottom: 0;}
+
+
+/****** Inline Form by Arash Rasteh ********/
+/* Add gf_inline as form css in Gravity Forms Settings */
+
+.gf_inline_wrapper {
+    display: table;
+    width: 100%;
+}
+.gf_inline_wrapper .gform_footer {
+    display: inline-block;
+    padding-left: 10px;
+    width: 20%;
+}
+.gf_inline_wrapper .gform_footer button{
+  width: 100%;
+}
+.gf_inline_wrapper .gform_body {
+    display: inline-block;
+    float: left;
+    width: 80%;
+}
+.gf_inline_wrapper .gform_fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gf_inline_wrapper .gform_fields .gfield {
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+@media only screen and ( max-width: 576px ) {
+  .gf_inline_wrapper .gform_fields .gfield {
+    width: 100%;
+  }
+  .gf_inline_wrapper .gform_body {
+    width: 100%;
+  }
+  .gf_inline_wrapper .gform_footer {
+    padding: 0;
+    width: 100%;
+  }
+}

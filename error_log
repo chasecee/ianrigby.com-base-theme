@@ -1,0 +1,1 @@
+[14-Nov-2017 00:26:09 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/aodev3/public_html/base/wp-content/themes/understrap/index.php on line 14
